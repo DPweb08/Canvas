@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1 style="color:green">PREKSAVEC DAVID</h1>
+    <canvas id="test" width="700" height="400"
+            style="border:3px solid red;">
+    </canvas>
+    <script>
+        var platno = document.getElementById("test");
+        var x = platno.getContext("2d");
+        x.moveTo(0, 0);
+        x.lineTo(350, 400);
+        x.stroke();
+        x.moveTo(350,400);
+        x.lineTo(700, 0);
+        x.stroke();
+        x.moveTo(0, 400);
+        x.lineTo(350, 0);
+        x.stroke();
+        x.moveTo(350, 0);
+        x.lineTo(700, 400);
+        x.stroke();
+    </script>
+</body>
